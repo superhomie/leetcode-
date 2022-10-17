@@ -8,7 +8,7 @@ class Solution {
             }
         }
         return nums[0];}
-
+//设置一个反序的函数
      public void reverse(int[] nums) {
         int left = 0, right = nums.length - 1;
         while (left < right) {
