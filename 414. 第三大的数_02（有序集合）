@@ -1,0 +1,15 @@
+class Solution {
+    public int thirdMax(int[] nums) {
+        //利用一个有序集合来维护数组前三大的数字，背后利用treeset进行升序排序
+       //有序集合的大小超过3就删除最小元素。这样遍历一次后，若集合大小为3，其最小值就是第三大的数字；若集合大小不为3，则返回集合中的最大值
+        TreeSet<Integer> s=new TreeSet<Integer>();
+        for(int num:nums){
+            s.add(num);
+            if(s.size()>3){
+                s.remove(s.first());
+            }
+        }
+        return s.zize()=3?s.first:s.last;
+
+    }
+}
