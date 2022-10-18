@@ -1,9 +1,9 @@
 class Solution {
     public int thirdMax(int[] nums) {
-        Arrays.sort(nums);
-        reverse(nums);
+        Arrays.sort(nums);    //先利用Array.sort排序
+        reverse(nums);       //反向，进行降序排序
         for (int i = 1, diff = 1; i < nums.length; ++i) {
-            if (nums[i] != nums[i - 1] && ++diff == 3) { // 此时 nums[i] 就是第三大的数
+            if (nums[i] != nums[i - 1] && ++diff == 3) {    // 每两个数字不相等diff就加1。若diff等于3，此时 nums[i] 就是第三大的数
                 return nums[i];
             }
         }
