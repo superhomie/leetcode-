@@ -1,3 +1,3 @@
-# leetcode-arry
-关于数组的题目总结
+# leetcode
+关于力扣题目总结
 （根据提单）
